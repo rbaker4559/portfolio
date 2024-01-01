@@ -13,14 +13,12 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 140%;
     text-align: center;
-    margin: 2%;
 }
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 120%;
     text-align: center;
-    margin: 2%;
 }
 
 h4 {
@@ -33,6 +31,9 @@ p {
     text-align: center;
 }
 
+.br {
+    line-height: 2px;
+}
 /* Main */
 
 /* Headshot */
@@ -58,34 +59,59 @@ p {
 .hashtags {
     display: flex;
     padding: 0 5% 0 5%;
-    color: lightslategray;
-    font-style: italic;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
+.hashtags a {
+    color: lightslategray;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.hashtags a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+.hashtags a {
+    text-decoration: none;
+}
+*/
 
 .blurb p {
     margin: 4%;
 }
 
-/* My Journey Div */
-.my-journey {
+/* Contact Me Div */
+.contact-me {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5%;
     padding: 0 15%;
     height: 20%;
+    text-decoration: none;
 }
 
-.my-journey button{
+.contact-me button{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
     font-weight: bold;
     color: white;
     background-color: orange;
-    height: 40px;
-    border-radius: 5px;
+    height: 45px;
+    border-radius: 6px;
+    border: none;
     flex-grow: 2;
+}
+
+.contact-me button:hover {
+    background-color: darkorange;
+}
+
+.contact-me:active {
+    padding: 2px 16%;
 }
 
 /* Experience Aside */
@@ -131,6 +157,16 @@ p {
     height: 45px;
     width: 45px;
     flex-grow: .025;
+}
+
+.socials img:hover {
+    height: 60px;
+    width: 60px;
+}
+
+.socials img:active {
+    height: 65px;
+    width: 65px;
 }
 
 /* IDs */
@@ -197,13 +233,11 @@ p {
     h2{
         font-size: 100%;
         text-align: left;
-        margin: 2.5% 0;
     }
 
     h3{
         font-size: 100%;
         text-align: left;
-        margin: 2.5% 0;
     }
 
     h4 {
@@ -233,11 +267,15 @@ p {
     .about-me {
         float: right;
         width: 50%;
-        padding: 10% 5% 10% 5%;
     }
 
     .experience {
         padding: 0;
+    }
+
+    /* Contact Me Div */
+    .contact-me {
+        margin: 5% 5% 0 5%;
     }
 
 
@@ -245,40 +283,52 @@ p {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-        /* Elemental */
-        h1{
-            font-size: 180%;
-            text-align: left;
-        }
-    
-        h2{
-            font-size: 140%;
-            text-align: left;
-            margin: 2.5% 0;
-        }
-    
-        h3{
-            font-size: 140%;
-            text-align: left;
-            margin: 2.5% 0;
-        }
-    
-        h4 {
-            font-size: 110%;
-            text-align: left;
-        }
-    
-        p {
-            font-size: 110%;
-            text-align: left;
-        }
-    
-        li {
-            font-size: 110%;
-            text-align: left;
-        }
+    /* Elemental */
+    h1{
+        font-size: 180%;
+        text-align: left;
+    }
 
-}
+    h2{
+        font-size: 140%;
+        text-align: left;
+    }
+
+    h3{
+        font-size: 140%;
+        text-align: left;
+    }
+
+    h4 {
+        font-size: 110%;
+        text-align: left;
+    }
+
+    p {
+        font-size: 110%;
+        text-align: left;
+    }
+
+    li {
+        font-size: 110%;
+        text-align: left;
+    }
+
+    /* Experience Aside */
+    .work li {
+        margin: 3% 0;
+    }
+
+    .education li {
+        margin: 5% 0;
+    }
+
+    }
+
+    /* Socials */
+    .socials {
+        padding: 0 5% 5% 5%;
+    }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

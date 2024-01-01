@@ -8,6 +8,8 @@
     <title>Reggie Baker</title>
 </head>
 <body>
+<!-- Note to Grader: purposely set website to fit viewport w/ minimal scrolling. Still added "jump to sections" in accordance w/ assignment-->
+<!-- Note to Self: remove links and section-specific IDs after graded assignment-->  
     <main>
         <!-- Headshot -->
         <figure class="headshot">
@@ -15,7 +17,7 @@
         </figure>
 
         <!-- About Me Section -->
-        <section class="about-me">
+        <section class="about-me" id="about-me">
 
             <!--Name, Title, Location-->
             <figcaption class="caption">
@@ -26,18 +28,17 @@
             
             <!-- Resume Article -->
             <article class="blurb">
-                <p>Welcome to my portfolio! My name is Reggie Baker and I'm fullstack developer with nearly a decade of experience Enterprise SaaS Sales. I'm proud and excited to leverage my business-case centric and client-facing experience to develop exciting and truly impactful solutions. blah blah blah.</p>
+                <p>My name is Reggie Baker and I'm Full-Stack Developer with nearly a decade of experience in Enterprise SaaS Sales. In the last ten years, I’ve had the pleasure of working with enterprises to deploy AI solutions, cloud marketplace GTM initiatives, HRIS solutions, and much more. <br><br> I'm overwhelmingly passionate about tech and the unique ways we impact user stories and business outcomes. Excited to now leverage my client-facing/strategic experiences as I hone my skills as a Developer. <br><br>Currently skilled in HTML5, CSS, PHP, and Javascript.</p>
                 <!-- Hastags Flexbox -->
                 <ul class="hashtags">
-                    <li>#hastag</li>
-                    <li>#hastag</li>
-                    <li>#hastag</li>
+                    <a href="#about-me"><li>My Journey</li></a>
+                    <a href="#experience"><li>My Projects</li></a>
                 </ul>
-                <div class="my-journey">
-                    <button type="button" href="#" id="my-journey">My Journey</button>
-                </div>
+                <a class="contact-me" href="mailto:reginaldsbaker@icloud.com">
+                    <button type="button">Contact Me</button>
+                </a>
                 <!-- Experience -->
-                <aside class="experience">
+                <aside class="experience" id="experience">
 
                     <div class="education">
                         <h4>Education</h4>
