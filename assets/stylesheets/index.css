@@ -31,7 +31,6 @@ h4 {
 p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    justify-content: center;
 }
 
 /* Main */
@@ -55,7 +54,7 @@ p {
     margin: 4%;
 }
 
-/* Resume Article */
+/* About Me Section */
 .hashtags {
     display: flex;
     padding: 0 5% 0 5%;
@@ -69,9 +68,30 @@ p {
     margin: 4%;
 }
 
+/* My Journey Div */
+.my-journey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 0 15%;
+    height: 20%;
+}
+
+.my-journey button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    height: 40px;
+    border-radius: 5px;
+    flex-grow: 2;
+}
+
+/* Experience Aside */
 .experience {
     display: flex;
-    padding: 10% 10% 0 10%;
+    padding: 0 10% 0 10%;
     align-content: center;
 }
 
@@ -113,6 +133,7 @@ p {
     flex-grow: .025;
 }
 
+/* IDs */
 
 /* Media Queries */
 
