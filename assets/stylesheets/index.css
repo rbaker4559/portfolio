@@ -1,0 +1,265 @@
+/* Universal */
+
+/* Elemental */
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 190%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140%;
+    text-align: center;
+    margin: 2%;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    text-align: center;
+    margin: 2%;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px auto 4px auto;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Main */
+
+/* Headshot */
+.headshot {
+    height: 30%;
+    width: 100%;
+}
+
+.headshot img {
+    height: 100%;
+    width: 100%;
+}
+
+/* || About Me Section */
+
+
+/* Caption */
+.caption {
+    margin: 4%;
+}
+
+/* Resume Article */
+.hashtags {
+    display: flex;
+    padding: 0 5% 0 5%;
+    color: lightslategray;
+    font-style: italic;
+    justify-content: space-between;
+}
+
+
+.blurb p {
+    margin: 4%;
+}
+
+.experience {
+    display: flex;
+    padding: 10% 10% 0 10%;
+    align-content: center;
+}
+
+.experience-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work {
+    margin: 3px;
+    padding: 5%;
+}
+
+.work li {
+    margin: 5% 0;
+}
+
+.education {
+    margin: 3px;
+    padding: 5%;
+}
+
+.education li {
+    margin: 15% 0;
+}
+
+/* Socials */
+.socials {
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    padding: 5%;
+}
+
+.socials img {
+    height: 45px;
+    width: 45px;
+    flex-grow: .025;
+}
+
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Elemental */
+    h1{
+        font-size: 250%;
+    }
+
+    h2{
+        font-size: 150%;
+    }
+
+    h3{
+        font-size: 150%;
+    }
+
+    h4 {
+        font-size: 120%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 120%;
+    }
+
+    li {
+        font-size: 120%;
+        text-align: center;
+    }
+    
+    /* Headshot */
+    .headshot {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* Resume Article */
+    .hashtags {
+    padding: 0 10% 0 10%;
+    }
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Elemental */
+    h1{
+        font-size: 150%;
+        text-align: left;
+    }
+
+    h2{
+        font-size: 100%;
+        text-align: left;
+        margin: 2.5% 0;
+    }
+
+    h3{
+        font-size: 100%;
+        text-align: left;
+        margin: 2.5% 0;
+    }
+
+    h4 {
+        font-size: 100%;
+        text-align: left;
+    }
+
+    p {
+        font-size: 100%;
+        text-align: left;
+    }
+
+    li {
+        font-size: 100%;
+        text-align: left;
+    }
+
+    /* Resume Article */
+    
+    .headshot {
+        float: left;
+        height: 100%;
+        width: 50%;
+        height: 100%;
+    }
+   
+    .about-me {
+        float: right;
+        width: 50%;
+        padding: 10% 5% 10% 5%;
+    }
+
+    .experience {
+        padding: 0;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+        /* Elemental */
+        h1{
+            font-size: 180%;
+            text-align: left;
+        }
+    
+        h2{
+            font-size: 140%;
+            text-align: left;
+            margin: 2.5% 0;
+        }
+    
+        h3{
+            font-size: 140%;
+            text-align: left;
+            margin: 2.5% 0;
+        }
+    
+        h4 {
+            font-size: 110%;
+            text-align: left;
+        }
+    
+        p {
+            font-size: 110%;
+            text-align: left;
+        }
+    
+        li {
+            font-size: 110%;
+            text-align: left;
+        }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
