@@ -62,7 +62,6 @@ a {
 /* About Me Section */
 .hashtags {
     display: flex;
-    padding: 0 5% 0 5%;
     justify-content: space-around;
 }
 
@@ -76,13 +75,6 @@ a {
     text-decoration: underline;
 }
 
-
-/*
-.hashtags a {
-    text-decoration: none;
-}
-*/
-
 .blurb p {
     margin: 4%;
 }
@@ -91,11 +83,8 @@ a {
 .contact-me {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 5%;
     padding: 0 15%;
-    height: 20%;
-    text-decoration: none;
 }
 
 .contact-me button{
@@ -122,7 +111,7 @@ a {
 .experience {
     display: flex;
     padding: 0 10% 0 10%;
-    align-content: center;
+    justify-content: center;
 }
 
 .experience-flex {
@@ -153,14 +142,13 @@ a {
 .socials {
     display: flex;
     justify-content: space-around;
-    height: 10%;
-    padding: 5%;
+    align-items: center;
+    height: 100px;
 }
 
 .socials img {
     height: 45px;
     width: 45px;
-    flex-grow: .025;
 }
 
 .socials img:hover {
@@ -177,37 +165,29 @@ a {
 .projects {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    padding: 5%;
-}
-
-.projects p{
-    top: -50px;
-    margin: auto;
-    position: relative;
-    color: white;
-    font-weight: bold;
-    font-size: 30%;
-    flex: 2;
+    justify-content: center;
+    margin-top: 10%;
+    height: 100px;
+    width: 100%;
 }
 
 .projects img{
     display:block;
     margin: auto;
+    border-radius: 25px;
     padding: 2%;
-    flex-grow: 2;
-    height: 45%;
-    width: 45%;
+    height: 100px;
+    width: 150px;
 }
 
 .projects img:hover {
-    height: 46%;
-    width: 46%;
+    height: 102px;
+    width: 152px;
 }
 
 .projects img:active {
-    height: 47%;
-    width: 47%;
+    height: 105px;
+    width: 155px;
 }
 
 
@@ -235,9 +215,18 @@ a {
     background-color: lightgray;
 }
 
-.projects
-
 /* IDs */
+
+#recent-projects{
+    top: -50px;
+    margin: auto;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    display: block;
+}
 
 /* Media Queries */
 
@@ -287,7 +276,27 @@ a {
     }
 
      /* Projects */
-     .projects p{
+     .projects {
+        height: 200px;
+        width: 100%;
+    }
+    
+    .projects img{
+        height: 150px;
+        width: 200px;
+    }
+
+    .projects img:hover {
+        height: 152px;
+        width: 202px;
+    }
+    
+    .projects img:active {
+        height: 155px;
+        width: 205px;
+    }
+
+     #recent-projects{
         font-size: 100%;
     }
 
@@ -382,7 +391,7 @@ a {
         font-size: 110%;
         text-align: left;
     }
-
+    
     /* Experience Aside */
     .work li {
         margin: 3% 0;
@@ -397,6 +406,27 @@ a {
     /* Socials */
     .socials {
         padding: 0 5% 5% 5%;
+    }
+
+    /* Projects */
+    .projects {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .projects img{
+        height: 200px;
+        width: 250px;
+    }
+
+    .projects img:hover {
+        height: 202px;
+        width: 252px;
+    }
+    
+    .projects img:active {
+        height: 205px;
+        width: 255px;
     }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
