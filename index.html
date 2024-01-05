@@ -12,9 +12,8 @@
 <!-- Note to Self: remove links and section-specific IDs after graded assignment-->  
     <main>
         <!-- Headshot -->
-        <figure class="headshot">
-            <img src="assets/images/IMG_6841.jpeg" alt="./assets/images/IMG_5338.JPG">
-        </figure>
+        <!--Note for Prince: Deleted unecessary div-->
+        <img src="assets/images/IMG_6841.jpeg" alt="./assets/images/IMG_5338.JPG" class="headshot">
 
         <!-- About Me Section -->
         <section class="about-me" id="about-me">
@@ -31,8 +30,10 @@
                 <p>My name is Reggie Baker and I'm Full-Stack Developer with nearly a decade of experience in Enterprise SaaS Sales. In the last ten years, I’ve had the pleasure of working with enterprises to deploy AI solutions, cloud marketplace GTM initiatives, HRIS solutions, and much more. <br><br> I'm overwhelmingly passionate about tech and the unique ways we impact user stories and business outcomes. Excited to now leverage my client-facing/strategic experiences as I hone my skills as a Developer. <br><br>Currently skilled in HTML5, CSS, PHP, and Javascript.</p>
                 <!-- Hastags Flexbox -->
                 <ul class="hashtags">
-                    <a href="#about-me"><li>My Journey</li></a>
-                    <a href="#my-projects"><li>My Projects</li></a>
+
+                    <!--For Prince: Corrected li syntax. Anchor should be nested w/in the li. Could also change my ul to a div if I simply wanted two floating anchors w/in my flexbox.-->
+                    <li><a href="#about-me">My Journey</a></li>
+                    <li><a href="#my-projects">My Projects</a></li>
                 </ul>
                 <a class="contact-me" href="mailto:reginaldsbaker@icloud.com">
                     <button type="button">Contact Me</button>
